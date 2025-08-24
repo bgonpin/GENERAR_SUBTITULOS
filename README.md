@@ -283,5 +283,5 @@ En este video aprenderemos...
 ---
 
 **Generador de Subtítulos** - Documentación Técnica  
-Desarrollado con Python | Última actualización: Diciembre 2024  
+Desarrollado con Python | Última actualización: Agosto 2025  
 Para más información, consulte el código fuente en `generar.py`
