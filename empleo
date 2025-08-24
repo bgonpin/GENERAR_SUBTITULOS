@@ -1,0 +1,31 @@
+# 🚀 INSTRUCCIONES CORREGIDAS PARA USAR EL SCRIPT
+
+# 1. USO BÁSICO (RECOMENDADO - usa Whisper local)
+python generar.py
+
+# 2. TRANSCRIPCIÓN Y TRADUCCIÓN AL ESPAÑOL
+python generar.py --translate
+
+# 3. TRADUCCIÓN A OTROS IDIOMAS
+python generar.py --translate --target-lang en    # Inglés
+python generar.py --translate --target-lang fr    # Francés
+python generar.py --translate --target-lang de    # Alemán
+
+# 4. USAR OLLAMA PARA TRADUCCIÓN (requiere modelos de Ollama)
+python generar.py --translate --translation-method ollama
+
+# 5. ESPECIFICAR MODELO DE OLLAMA PARA TRADUCCIÓN
+python generar.py --translate --translation-method ollama --translation-model mistral
+
+# 6. USAR OLLAMA PARA TRANSCRIPCIÓN (menos recomendado)
+python generar.py --use-ollama
+
+# 7. COMBINAR OPCIONES
+python generar.py --translate --target-lang en --translation-method ollama
+
+# ⚠️ NOTAS IMPORTANTES:
+# - Por defecto usa Whisper local (mejor calidad)
+# - Si no tienes Whisper: pip install openai-whisper
+# - Para traducción automática: pip install googletrans==4.0.0rc1
+# - Los archivos de video van en carpeta "videos_entrada/"
+# - Los subtítulos se guardan en "videos_salida/"
